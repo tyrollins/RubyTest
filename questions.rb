@@ -35,7 +35,7 @@ end
 # discard the first 3 elements of an array,
 # e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
 def all_elements_except_first_3(array)
-
+  array.drop(3)
 end
 
 # add an element to the beginning of an array
@@ -67,7 +67,7 @@ end
 # even numbers come first
 # so [1, 2, 3, 4, 5, 6] becomes [[2, 4, 6], [1, 3, 5]]
 def separate_array_into_even_and_odd_numbers(array)
-
+  array.partition(&:even?)
 end
 
 # count the numbers of elements in an element which are palindromes
