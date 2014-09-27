@@ -53,7 +53,8 @@ end
 # 'banana' becomes 'ban'. If the string is an odd number of letters
 # round up - so 'apple' becomes 'app'
 def get_first_half_of_string(string)
-
+ letters = (string.length / 2.0).ceil
+ string[0, letters]
 end
 
 # turn a positive integer into a negative integer. A negative integer
@@ -197,7 +198,7 @@ end
 # get the upper limit of a range. e.g. for the range 1..20, you
 # should return 20
 def get_upper_limit_of(range)
-
+  range.end
 end
 
 # should return true for a 3 dot range like 1...20, false for a
@@ -208,7 +209,7 @@ end
 
 # get the square root of a number
 def square_root_of(number)
-
+  Math.sqrt(number)
 end
 
 # count the number of words in a file
